@@ -23,7 +23,7 @@
 
   <div>
     <%= form.label :category, style: "display: block" %>
-    <%= form.select :category, Article::CATEGORY_NAMES.map { [it[1], it[0]] } %>
+    <%= form.select :category, Article::CATEGORY_NAMES.map { |n| [n[1], n[0]] } %>
   </div>
 
   <div>
